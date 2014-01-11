@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+	<head>
+		<title>ErdosPad Demo</title>
+		<link rel="stylesheet" href="dist/erdospad.css">
+		<script src="dist/erdospad-debug.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+			  var erdospad = new ErdosPad($("#demo"), {"content": $("#initial-content").text()});
+			});
+		</script>	
+	</head>
+	<body>
+		<div id="demo"></div>
+		<pre id="initial-content" style="display: none;">
+			Trip Cost:
+
+			$250 for the plane + $100 * 3 days for the hotel
+			$25 for lunch + 10% sales tax
+		</pre>
+	</body>
+</html>
